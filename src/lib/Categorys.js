@@ -1,0 +1,20 @@
+export const Category = [
+  { id: 1, name: 'Jeans' },
+  { id: 2, name: 'Kurta' },
+  { id: 3, name: 'Dresses' },
+  { id: 4, name: 'Tops' },
+  { id: 5, name: 'Shoes' },
+  { id: 6, name: 'Jumpsuites' },
+  { id: 7, name: 'Playsuites' },
+  { id: 8, name: 'Jackets' },
+  { id: 9, name: 'Sunglasses' },
+  { id: 10, name: 'Dress Material' },
+  { id: 11, name: 'Ethnic Wear' },
+  { id: 12, name: 'Rain Jackets' },
+  { id: 13, name: 'Sports Wear' },
+  { id: 14, name: 'Inner Wear' },
+  { id: 15, name: 'Grooming' },
+  { id: 16, name: 'Bags' },
+  { id: 17, name: 'Sleep Wears' },
+  { id: 18, name: 'Kids Wear' }
+]
