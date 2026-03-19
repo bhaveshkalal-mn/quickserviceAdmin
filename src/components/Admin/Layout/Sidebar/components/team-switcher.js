@@ -19,6 +19,7 @@ import {
   useSidebar
 } from '@/components/ui/sidebar'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function TeamSwitcher ({ teams }) {
   const { isMobile } = useSidebar()
@@ -33,6 +34,7 @@ export function TeamSwitcher ({ teams }) {
       <SidebarMenuItem>
         <div className='px-2  py-4 grid place-items-center  '>
           <div className='w-full h-full flex place-items-center'>
+            <Link href="/">
             <Image
               width={0}
               height={0}
@@ -40,6 +42,7 @@ export function TeamSwitcher ({ teams }) {
               className='w-[80px] md:w-[100px] lg:w-[130px] xl:w-[147px] h-[25px] lg:h-[35px] xl:h-[40px] '
               src='/assests/comman/logo.svg'
             />
+            </Link>
           </div>
         </div>
         <div className='border-b-[1px] border-gray-100'></div>

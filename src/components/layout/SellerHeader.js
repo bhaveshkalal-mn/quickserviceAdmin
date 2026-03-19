@@ -5,15 +5,31 @@ import Image from 'next/image'
 import { SidebarTrigger } from '../ui/sidebar'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuTrigger } from '../ui/dropdown-menu'
 import { useRouter } from 'next/navigation'
+import { Input } from '../ui/input'
 
 function SellerHeader() {
    const router = useRouter();
   return (
     <div className='w-[100%]  bg-[white] ' >
       <div className=' h-full flex place-items-center justify-between'>
-        <div className='flex gap-x-[20px] place-items-center '>
+        <div className='w-[100%] flex gap-x-[20px] place-items-center '>
          
           <SidebarTrigger className='' />
+          <div className='w-[40%] lg:w-[30%] flex place-items-center gap-0 border-[1px] border-[#EBEBEB] pl-4 rounded-[6px]'>
+              <Image
+                alt='add'
+                width={0}
+                height={0}
+                src='/assests/selleradmin/comman/search.svg'
+                className='w-[14px] h-[14px]'
+              />
+              <Input
+                placeholder="Search user by ID, Email"
+                
+               
+                className='border-0 focus:none h-[26px] lg:h-[34px] xl:h-[39px]'
+              />
+            </div>
         </div>
         
             <div className='flex  gap-x-[10px] lg:gap-x-[15px] xl:gap-x-[20px]   h-[25px] lg:h-[35px] xl:h-[40px] place-items-center justify-end w-fit '>
@@ -46,7 +62,7 @@ function SellerHeader() {
                                <DropdownMenuGroup className=' py-[2px] xl:py-[5px]'>
                                 <DropdownMenuItem>
                                   
-                                     <div  onClick={() => router.push("/login")} className='flex place-items-center gap-x-[7px] xl:gap-x-[10px] px-[3px] cursor-pointer'>
+                                     <div  onClick={() => router.push("")} className='flex place-items-center gap-x-[7px] xl:gap-x-[10px] px-[3px] cursor-pointer'>
                                        <div className='w-[14px] lg:w-[16px]'>
                                          <Image
                                            alt='img'

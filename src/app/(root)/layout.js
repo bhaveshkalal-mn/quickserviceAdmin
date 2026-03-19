@@ -1,7 +1,7 @@
 'use client'
 
 import SellerHeader from '@/components/layout/SellerHeader'
-import { AppSidebar } from '@/components/SellerAdmin/Layout/Sidebar/components/app-sidebar'
+import { AppSidebar } from '@/components/Admin/Layout/Sidebar/components/app-sidebar'
 import {
   SidebarInset,
   SidebarProvider,

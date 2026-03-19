@@ -27,50 +27,11 @@ function Notification() {
                  
                   <DropdownMenuGroup className="grid gap-x-2px xl:gap-y-[5px] py-[5px] xl:py-[10px]">
                      <DropdownMenuItem>
-                        <div className="flex  gap-x-[20px] xl:gap-x-[25px] px-[3px]">
-                          <div className="w-[30px] xl:w-[40px] h-[30px] xl:h-[40px]">
-                           <div className='w-[30px] xl:w-[40px] h-[30px] xl:h-[40px] bg-[#D9D9D9] rounded-full'></div>
-                            
-                          </div>
-                          <div>
-                            <h1 className="text-[12px] lg:text-[13px] xl:text-[14px] font-normal ">
-                             Get ₹20,000* worth of Times Prime Rewards with Flipkart Pay Later. Register & Access Up to ₹1 Lakh* Credit!
-
-
-                            </h1>
-                            <h1 className="text-[12px] lg:text-[13px] xl:text-[14px] font-normal mt-[20px] text-[#A6A4A4]">
-                           09 Jul, 2024
-                            </h1>
-                          </div>
-                        </div>
+                       
                      </DropdownMenuItem>
                       <DropdownMenuSeparator className="my-[5px] xl:my-[10px]" />
-                         <DropdownMenuItem>
-                        <div className="flex  gap-x-[20px] xl:gap-x-[25px] px-[3px]">
-                          <div className="w-[30px] xl:w-[40px] h-[30px] xl:h-[40px]">
-                           <div className='w-[30px] xl:w-[40px] h-[30px] xl:h-[40px] bg-[#D9D9D9] rounded-full'></div>
-                            
-                          </div>
-                          <div>
-                            <h1 className="text-[12px] lg:text-[13px] xl:text-[14px] font-normal ">
-                             Get ₹20,000* worth of Times Prime Rewards with Flipkart Pay Later. Register & Access Up to ₹1 Lakh* Credit!
-
-
-                            </h1>
-                            <h1 className="text-[12px] lg:text-[13px] xl:text-[14px] font-normal mt-[20px] text-[#A6A4A4]">
-                           09 Jul, 2024
-                            </h1>
-                          </div>
-                        </div>
-                     </DropdownMenuItem>
-                      <DropdownMenuSeparator className="my-[5px] xl:my-[10px]" />
-                      <div className='pb-[5px] flex justify-center'>
-                         <h1 className="text-[12px] lg:text-[13px] xl:text-[14px] font-medium ">
-                          Show All Notifications
-
-
-                            </h1>
-                      </div>
+                        
+                      
                   </DropdownMenuGroup>
                  
                   </DropdownMenuContent>

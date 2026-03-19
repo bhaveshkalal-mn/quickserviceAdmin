@@ -83,7 +83,12 @@ const data = {
       icon: '/assests/admin/sidebaricon/revenue.svg'
      
     },
-   
+   {
+      name: 'Reviews',
+      url: '/dashboard/reviews',
+      icon: '/assests/admin/sidebaricon/review.svg'
+     
+    },
     {
       name: 'Email Marketing',
       url: '/dashboard/marketing',
@@ -98,151 +103,13 @@ const data = {
     },
     {
       name: 'Setting',
-      url: '/dashboard/settings',
+      url: '/dashboard/setting',
       icon: '/assests/admin/sidebaricon/setting.svg'
     },
   ],
-  navMain: [
+  
     
-    {
-      name: 'Sales',
-      url: '/dashboard/sales',
-      icon: '/assests/selleradmin/sidebaricon/sales.svg',
-      items: [
-        {
-          name: 'Orders',
-          url: '/dashboard/sales/orders'
-        },
-        {
-          name: 'Shipments',
-          url: '/dashboard/sales/shipments'
-        },
-        {
-          name: 'Invoices',
-          url: '/dashboard/sales/invoices'
-        },
-        {
-          name: 'Refunds',
-          url: '/dashboard/sales/refunds'
-        },
-        {
-          name: 'Transaction',
-          url: '/dashboard/sales/transactions'
-        },
-      ]
-    },
-    {
-      name: 'Marketplace',
-      url: '/dashboard/marketplace',
-      icon: '/assests/selleradmin/sidebaricon/market.svg',
-      items: [
-         {
-          name: 'Sellers',
-          url: '/dashboard/marketplace/sellers'
-        },
-        {
-          name: 'Products',
-          url: '/dashboard/marketplace/products'
-        },
-        {
-          name: 'Payment Requests',
-          url: '/dashboard/marketplace/paymentrequest'
-        },
-        {
-          name: 'Product Review',
-          url: '/dashboard/marketplace/reviews'
-        },
-        {
-          name: 'Seller Review',
-          url: '/dashboard/marketplace/sellerreview'
-        },
-        {
-          name: 'Flag Reason',
-          url: '/dashboard/marketplace/flagreason'
-        },
-        {
-          name: 'Inventory Source',
-          url: '/dashboard/marketplace/source'
-        },
-        
-      ]
-    },
-    {
-      name: 'Catalogue',
-      url: '/dashboard/catalogue',
-      icon: '/assests/selleradmin/sidebaricon/catalogue.svg',
-      items: [
-       {
-          name: 'Products',
-          url: '/dashboard/catalogue/products'
-        },
-        {
-          name: 'Categories',
-          url: '/dashboard/catalogue/categories'
-        },
-        {
-          name: 'Attributes',
-          url: '/dashboard/catalogue/attributes'
-        },
-        
-      ]
-    },
-    {
-      name: 'Customers',
-      url: '/dashboard/customer',
-      icon: '/assests/selleradmin/sidebaricon/customers.svg',
-      items: [
-        {
-          name: 'Customers',
-          url: '/dashboard/customer/customers'
-        },
-        {
-          name: 'Groups',
-          url: '/dashboard/customer/groups'
-        },
-         {
-          name: 'Reviews',
-          url: '/dashboard/customer/reviews'
-        },
-         {
-          name: 'GDPR Requests',
-          url: '/dashboard/customer/request'
-        },
-        
-      ]
-    },
-    
-    
-  ],
-    
-   project: [
-    {
-      name: 'CMS',
-      url: '/dashboard/cms',
-      icon: '/assests/selleradmin/sidebaricon/cms.svg'
-    },
-    {
-      name: 'Marketing',
-      url: '/dashboard/marketing',
-      icon: '/assests/selleradmin/sidebaricon/marketing.svg'
-    },
-    {
-      name: 'Reporting',
-      url: '/dashboard/reports',
-      icon: '/assests/selleradmin/sidebaricon/reporting.svg'
-    },
-    {
-      name: 'Setting',
-      url: '/dashboard/settings',
-      icon: '/assests/selleradmin/sidebaricon/setting.svg'
-    },
-    {
-      name: 'Configure',
-      url: '/dashboard/configure',
-      icon: '/assests/selleradmin/sidebaricon/setting.svg'
-    },
-    
-  ]
+   
 }
 
 export function AppSidebar ({ ...props }) {
@@ -254,9 +121,7 @@ export function AppSidebar ({ ...props }) {
       <SidebarContent className=' '>
         {/*(For multiple Section)  */}
         <NavProjects projects={data.projects} />
-        <NavMain items={data.navMain} />
-        {/* Use for seperate section (For single Section)  */}
-        <NavProjects projects={data.project} />
+        
           <div className='border-b-[1px] border-gray-100 mt-[10px]'></div>
       <h1 className='group-data-[collapsible=icon]:hidden mt-[10px] text-[11px] xl:text-[12px] px-[5px] xl:px-[8px]'>
         © 2023 MN Techgroup. All rights reserved

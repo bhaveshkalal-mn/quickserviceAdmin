@@ -109,7 +109,7 @@ function page() {
                     <p className='text-[16px] lg:text-[18px] xl:text-[20px] font-normal'>
                   Bookings
                     </p>
-                    <Link href="/dashboard/users/addprofile">
+                  <Link className='cursor-pointer' href="/dashboard/booking/progress">
                     <Image
                     alt='add'
                     width={0}
