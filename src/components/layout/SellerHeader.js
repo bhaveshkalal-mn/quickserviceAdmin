@@ -62,14 +62,14 @@ function SellerHeader() {
                                <DropdownMenuGroup className=' py-[2px] xl:py-[5px]'>
                                 <DropdownMenuItem>
                                   
-                                     <div  onClick={() => router.push("")} className='flex place-items-center gap-x-[7px] xl:gap-x-[10px] px-[3px] cursor-pointer'>
+                                     <div  onClick={() => router.push("/dashboard/profile")} className='flex place-items-center gap-x-[7px] xl:gap-x-[10px] px-[3px] cursor-pointer'>
                                        <div className='w-[14px] lg:w-[16px]'>
                                          <Image
                                            alt='img'
                                            width={0}
                                            height={0}
                                            className='w-[12px] xl:w-[16px] h-[14px] xl:h-[16px]'
-                                           src='/assests/selleradmin/sidebaricon/profile.svg'
+                                           src='/assests/comman/profile2.svg'
                                          />
                                        </div>
              

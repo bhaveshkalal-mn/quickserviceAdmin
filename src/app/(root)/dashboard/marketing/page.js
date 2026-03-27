@@ -1,10 +1,115 @@
 "use client"
+import DataTable from '@/components/Admin/module/DataTable'
 import Image from 'next/image'
 import React from 'react'
 
 
 
 function page() {
+  const data = [
+    {
+      id: '1',
+    no: '1',
+      sent: 'All Users',
+      subject: 'New Discounts on Subscription',
+       template: 'Sign Up Template',
+        status: 'Sent',
+      delete: '/assests/comman/delete.svg'
+    },
+     {
+      id: '2',
+    no: '2',
+      sent: 'All Users',
+      subject: 'New Discounts on Subscription',
+       template: 'Sign Up Template',
+        status: 'Sent',
+      delete: '/assests/comman/delete.svg'
+    },
+     {
+      id: '3',
+    no: '3',
+      sent: 'Premium Members',
+      subject: 'New Discounts on Subscription',
+       template: 'Sign Up Template',
+        status: 'Scheduled',
+      delete: '/assests/comman/delete.svg'
+    },
+     {
+      id: '4',
+    no: '4',
+      sent: 'Premium Members',
+      subject: 'New Discounts on Subscription',
+       template: 'Sign Up Template',
+        status: 'Sent',
+      delete: '/assests/comman/delete.svg'
+    },
+     {
+      id: '5',
+    no: '5',
+      sent: 'Premium Members',
+      subject: 'New Discounts on Subscription',
+       template: 'Sign Up Template',
+        status: 'Sent',
+      delete: '/assests/comman/delete.svg'
+    },
+     {
+      id: '6',
+    no: '6',
+      sent: 'Premium Members',
+      subject: 'New Discounts on Subscription',
+       template: 'Sign Up Template',
+        status: 'Sent',
+      delete: '/assests/comman/delete.svg'
+    },
+     {
+      id: '7',
+    no: '7',
+      sent: 'All Users',
+      subject: 'New Discounts on Subscription',
+       template: 'Sign Up Template',
+        status: 'Sent',
+      delete: '/assests/comman/delete.svg'
+    },
+      
+     
+  ]
+
+  const columns = [
+     {
+      accessorKey: 'no',
+      header: 'ID No'
+    },
+    {
+      accessorKey: 'sent',
+      header: 'Sent To'
+    },
+    {
+      accessorKey: 'subject',
+      header: 'Subject'
+    },
+    {
+      accessorKey: 'template',
+      header: 'Template'
+    },
+     {
+      accessorKey: 'status',
+      header: 'Status',
+      
+      
+    },
+    {
+      accessorKey: 'delete',
+      header: 'Action',
+      cell: ({ row }) => (
+        <img
+          src={row.getValue('delete')}
+          alt='avatar'
+          className='w-[24px] h-[24px]  cursor-pointer'
+        />
+      )
+     
+    }
+  ]
      
   return (
    <>
@@ -23,8 +128,9 @@ function page() {
                        />
                       
                        </div>
-                         <div className="mt-[20px]">
-                          </div>
+                          <div>
+            <DataTable data={data} columns={columns} />
+          </div>
                           </div>
    </>
   )

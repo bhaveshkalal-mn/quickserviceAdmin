@@ -153,7 +153,7 @@ function page () {
                     </Popover>
                   </div>
                 </div>
-                <div className=''>
+                {/* <div className=''>
                   <div className='flex flex-col gap-3'>
                     <Popover open={openmodel} onOpenChange={setOpenmodel}>
                       <PopoverTrigger asChild>
@@ -188,7 +188,7 @@ function page () {
                       </PopoverContent>
                     </Popover>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className='mt-[20px]'>
